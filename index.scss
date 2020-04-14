@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
 
 #hero {
     height: 100vh;
@@ -15,7 +15,7 @@
         cursor: pointer;
         position: absolute;
         outline: none;
-        border:none;
+        border: none;
         background: rgba(0, 0, 0, 0);
         transition: 1s;
         .line {
@@ -28,12 +28,12 @@
             }
         }
     }
-    h1{
+    h1 {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        font-family: 'Bungee Inline', cursive;
+        font-family: "Bungee Inline", cursive;
         color: white;
         animation: cyber 1s infinite;
         font-size: 5em;
@@ -54,14 +54,14 @@
         font-size: 1.5em;
         width: fit-content;
         margin: 20px 0;
-        font-family: 'Bungee Inline', cursive;
-        margin-left:80px;
-        padding:0 20px;
+        font-family: "Bungee Inline", cursive;
+        margin-left: 80px;
+        padding: 0 20px;
         text-decoration: none;
         transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        &:hover{
+        &:hover {
             animation: cyber 3s infinite;
-            color: rgba(222,222,222);
+            color: rgba(222, 222, 222);
         }
     }
 }
@@ -71,30 +71,41 @@
     background-color: #222;
 }
 
-.minus{
-    button{
+.minus {
+    button {
         animation: move 2s;
-        margin-left:440px;
+        margin-left: 440px;
     }
-    .line{
-        &__1{
+    .line {
+        &__1 {
             opacity: 0%;
-            transition: 1s ;
+            transition: 1s;
         }
-        &__2{
-            background-color:cyan !important;
+        &__2 {
+            background-color: cyan !important;
         }
     }
 }
 // .rotate{}
 
-@keyframes move{
-    0% {margin-left: 0;}
-    50% {margin-left:440px;}
-    100% {margin-left: 440px}
+@keyframes move {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: 440px;
+    }
+    100% {
+        margin-left: 440px;
+    }
 }
 
-@keyframes cyber{
-    0%,100% {text-shadow:3px -5px 1px lightseagreen;}
-    50% {text-shadow:-3px -5px 1px rgb(166, 32, 178);}
+@keyframes cyber {
+    0%,
+    100% {
+        text-shadow: 3px -5px 1px lightseagreen;
+    }
+    50% {
+        text-shadow: -3px -5px 1px rgb(166, 32, 178);
+    }
 }
